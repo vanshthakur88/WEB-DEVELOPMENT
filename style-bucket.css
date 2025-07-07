@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #e6f2ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  padding: 2rem;
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+}
+
+h1 {
+  color: #005f99;
+  margin-bottom: 1.5rem;
+}
+
+.bucket-list {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.bucket-list li {
+  font-size: 1.1rem;
+  margin: 0.6rem 0;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  background: #f0f8ff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.completed {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.pending {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 1.2rem;
+  }
+
+  .bucket-list li {
+    font-size: 1rem;
+  }
+}
